@@ -12,3 +12,11 @@ Check that you've built and deployed the project using the same TAG. Using 'late
 ## app:deploy hangs (eg. "task: non-zero exit")
 
 For some reason the service start fails (check logs/configuration) leaving Docker CLI hanging. CTRL-C to escape.
+
+## Image not found
+
+If image:push goes through but does not succeed, and spurts lines like
+
+    Error response from daemon: Get http://127.0.0.1:5104/v2/: EOF
+
+we don't know yet what causes it or how to mitigate it.
